@@ -6,4 +6,4 @@
 <p align='center'><img src= '11777.jpg', width=116, height=116><img src= '11967.jpg', width=116, height=116><img src= '12271.jpg', width=116, height=116><img src= '12324.jpg', width=116, height=116></p>
 
 <p>A hand reference chart from the paper <i>An Analysis of Deep Neural Network Models for Practical Applications</i> by Alfredo Canziani, Adam Paszke, Eugenio Culurciello</p>
-<p><img src='acc_vs_net_vs_ops.svg'></p>
+<p><img src='DNNs.png'></p>
