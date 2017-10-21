@@ -5,7 +5,7 @@
 <li>Number of FC dense layers: the number of connections for the add-on dense layer (Dense() before the final layer) should be a relatively small number to avoid overfitting given that it's a binary classification (dog or not dog).
 <li>Number of trainable layers: when using pretrained models, it's generally a good idea to freeze most of the bottom layers in the base model to avoid overfitting, especially if you have a small set of training data. For this transferred learning model, the weights of the bottom 6 layers were held constant during training. This was found to be optimal. Also, using PReLU activation in the top model led to small improvement in performance (PReLU activation is a more expressive activation function than ReLU).
 </ul>
-<p> After optimization and training on 22000 samples(catdog_vgg_pretrained(final).ipynb), the log loss score obtained was 0.10529 (ranked top 38%), a great improvement from previous models!</p>
+<p> After optimization and training on 22000 samples(catdog_vgg_pretrained(final).ipynb), the <b>log loss score obtained was 0.10529 (ranked top 38%)</b>, a great improvement from previous models!</p>
 
 <p>Note: other pretrained models (Inception and ResNet50) in Keras Application portals had image size requirement that didn't fit in memory, or it had issues with CuDNN. When configuring the AMI from Standford, it's necessary to upgrade Keras and configure Jupyter Notebook browser access. </p>
 
